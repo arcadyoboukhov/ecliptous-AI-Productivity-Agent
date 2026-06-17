@@ -1,0 +1,55 @@
+================================================================================
+FEATURE EXTRACTION SUMMARY REPORT
+================================================================================
+
+Dataset Overview:
+  Total segments: 16
+  Total features: 97
+  Feature sparsity: 90.5%
+
+Feature Statistics:
+  Mean value: 0.0861
+  Std deviation: 0.3312
+  Range: [0.00, 3.83]
+
+Task Distribution:
+  unknown: 10 segments (62.5%)
+  administrative_work: 3 segments (18.8%)
+  team_meeting: 2 segments (12.5%)
+  team_meeting | firefox.exe | TalkAI - Talk With ChatGPT — Mozilla Firefox: 1 segments (6.2%)
+
+Top Features by Variance:
+  1. duration_log                   var=0.8692 mean=2.205
+  2. dur_short                      var=0.2500 mean=0.500
+  3. is_session_start               var=0.2344 mean=0.375
+  4. dur_medium                     var=0.2148 mean=0.312
+  5. time_evening                   var=0.1875 mean=0.250
+  6. time_night                     var=0.1875 mean=0.750
+  7. app_firefox                    var=0.1523 mean=0.188
+  8. app_unknown                    var=0.1523 mean=0.812
+  9. is_task_return                 var=0.1523 mean=0.188
+  10. dur_long                       var=0.1094 mean=0.125
+  11. has_comm                       var=0.1094 mean=0.125
+  12. bow_3                          var=0.1094 mean=0.125
+  13. duration_ratio                 var=0.0719 mean=0.863
+  14. dur_very_short                 var=0.0586 mean=0.062
+  15. bow_5                          var=0.0586 mean=0.062
+
+Feature Categories:
+  Contextual features:
+    - App encoding: 12 features (one-hot)
+    - Time of day: 4 features (morning/afternoon/evening/night)
+    - Duration: 5 features (category + log-scaled + ratios)
+    - Temporal: 5 features (hour, weekday, weekend, work hours)
+
+  Behavioral features:
+    - Previous task: 6 features (one-hot encoded)
+    - Switching patterns: 5 features (count, return, frequency)
+
+  Semantic features:
+    - Domain indicators: 6 features (coding, docs, comm, research, prod, content)
+    - Text indicators: 3 features (has_code, has_docs, has_comm)
+    - Title stats: 2 features (length, keyword count)
+    - Bag of words: 50 features (top keywords)
+
+================================================================================
