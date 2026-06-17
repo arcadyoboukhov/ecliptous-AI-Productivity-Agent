@@ -1,0 +1,10 @@
+pywin32
+psutil
+win32gui
+PySide6
+pynput
+pycaw
+comtypes
+GPUtil
+matplotlib
+numpy
